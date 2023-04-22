@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //use the rest countries API URL "https://restcountries.com/v3.1/all" and display 
+        //all countries flags in the console.
+  
+         var request=new XMLHttpRequest();
+         request.open("GET","https://restcountries.com/v3.1/all");
+         request.send();
+         request.onload=function(){
+          var restCountries=JSON.parse(request.response)
+            console.log(restCountries[0])
+  
+             for(var i=0;i<restCountries.length;i++){
+                console.log("FLAG-"+restCountries[i].flags.alt)
+                console.log("FLAG-"+restCountries[i].flags.png)
+                console.log("FLAG-"+restCountries[i].flags.svg)
+             }
+  
+       }
+      </Script>
+</body>
+</html>
