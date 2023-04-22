@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML HTTP Request2</title>
+</head>
+<body>
+    <script>
+
+        ////use the rest countries API URL "https://restcountries.com/v3.1/all" and display 
+      //all countries name,region,sub-region,population in the console.
+      
+      var request=new XMLHttpRequest(); 
+      request.open("GET","https://restcountries.com/v3.1/all");
+      request.send();
+      request.onload=function(){
+        var restCountries= JSON.parse(request.response)
+            for(i=0;i<restCountries.length;i++){
+                console.log("COUNTRIESNAME-"+restCountries[i].name.common
+                +" REGION-"+restCountries[i].region
+                +" SUB-REGION-"+restCountries[i].subregion+" POPULATION-"+restCountries[i].population)
+            }
+      }
+    </script>
+</body>
+</html>
