@@ -1,0 +1,22 @@
+OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT:
+
+  JAVASCRIPT OBJECT:
+    A javaScript object is an entity having state and behavior (properties and method). An object method is an 
+    object property containing a function definition.
+
+ Object:
+    An object, is a reference data type. Variables that are assigned a reference value are given a reference or a 
+    pointer to that value. That reference or pointer points to the location in memory where the object is stored. 
+    The variables don’t actually store the value.
+
+ Object in javascript:
+    objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types,
+     in the form of “key: value” pairs.
+
+ Properties and methods of objects:
+  keys can be variables or functions and are called properties and methods, respectively, in the context of 
+  an object.
+
+ Objects and properties:
+   A JavaScript object has properties associated with it. A property of an object can be explained as a variable that 
+   is attached to the object.

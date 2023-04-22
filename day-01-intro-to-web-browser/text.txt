@@ -1,0 +1,44 @@
+INTRODUCTION TO HTTP:
+  HTTP - hypertext transfer protocol, in general, communication between web clients and web servers happens in 
+  (worldwideweb).so the communication between client computers and web servers is done by sending HTTP requests and 
+  HTTP responses.
+
+  HTTP1.1 VERSUS HTTP2
+   HTTP-1.1
+     1)It is slower than HTTP2
+     2)It was created in 1997, so it went througth several stages of developement, this HTTP1.1 is still 
+     in use on the web.
+     3)HTTP1.1 which keeps all requests and responses in plain text format.
+     4)HTTP1.1 as of plain text format uses verbs, methods and headers.
+     5)it use GET and POST methods.
+     6) In general,the first response that a client receives on an HTTP GET request is often not the fully rendered page. 
+        Instead, it contains links to additional resources needed by the requested page. inorder to overcome this
+        problem, HTTP/1.1 uses persistent connections and pipelining technique.
+     7) it doesnt use prioritization technique.
+     8)HTTP/1.1 relies on the transport layer to avoid buffer overflow, each new TCP connection requires a separate flow 
+     control mechanism.
+     9)In HTTP/1.1, if the developer knows in advance which additional resources the client machine will need to 
+     render the page, they can use a technique called resource inlining to include the required resource directly 
+     within the HTML document that the server sends in response to the initial GET request.
+     
+
+
+  HTTP-2 
+   1)It is faster and more efficient than HTTP1.1.
+   2)It was created in 2015, and HTTP2 is new version of HTTP1.1, hence HTTP2 solves several problem 
+   that the creates of HTTP1.1 did not anticipate.
+   3)HTTP-2 uses the binary forming layer, which is the part of the application layer in internet protocol stack.
+   4)HTTP-2 uses the binary forming layer, which encapsule all message in binary format.
+   5)HTTP-2 uses GET and POST methods.
+   6)HTTP/1.1, which must make use of multiple TCP connections to reduce the effect of head of line blocking.
+     inorder to overcome this problem HTTP2 uses HTTP/2 establishes a single connection object between the 
+     two machines. within this connection there are multiple streams of data. Each stream consists of multiple 
+     messages in the familiar request/response format. Finally, each of these messages split into smaller units 
+     called frames.
+   7)HTTP/2 began as the SPDY protocol, developed primarily at Google with the intention of reducing web 
+      page load latency by using techniques such as compression, multiplexing, and prioritization.
+   8) HTTP/2, however, multiplexes streams within a single TCP connection, and will have to implement flow 
+      control in a different manner.   
+   9)Since HTTP/2 enables multiple concurrent responses to a client’s initial GET request, a server can send a 
+     resource to a client along with the requested HTML page, providing the resource before the client 
+     asks for it. This process is called server push.
