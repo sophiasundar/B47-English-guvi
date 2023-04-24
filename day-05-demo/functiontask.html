@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even number</title>
+</head>
+<body>
+    <script>
+    // sum of even numbers
+
+    //iife
+
+   (
+        function(array){
+        var sum=0;
+        for(var i=0;i<array.length;i++){
+            if(array[i]%2==0){
+                sum=sum+array[i]
+          }
+     else {
+                sum=sum+array[i]
+          }
+          } console.log(sum)
+    }
+    )([1,2,3,4,5,6]);
+
+    //normal function
+
+           function sum(array){
+            var sum=0;
+        for(var i=0;i<array.length;i++){
+            sum=sum+array[i]
+        } console.log(sum)
+           }
+           sum([2,4,6]);
+
+    //annoymous function
+    
+             var sum=function(array){
+            var sum=0;
+        for(var i=0;i<array.length;i++){
+            sum=sum+array[i]
+        } 
+        console.log(sum)
+           }
+           sum([2,4,6]);
+
+    //arrow function
+    
+    var sum=(array)=>{
+        var sum=0;
+        for(var i=0;i<array.length;i++){
+            sum=sum+array[i]
+        } 
+        console.log(sum)
+    }
+    sum([2,4,6]); 
+
+    //spread operator
+
+    var arr=[1,2,3,4,5]
+     console.log(...arr)
+
+
+     var str="sophia"
+     console.log(...str)
+     console.log([...str])
+
+     var arr1=[0.1,0.2,0.3]
+     var arr2=[0.4,0.5,0.6]
+     var arr3=[...arr1,...arr2]
+     console.log(arr3)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
