@@ -10,13 +10,48 @@
     <script>
        
        // a)Print odd numbers in an array.
+      
+
+        var oddarrow=(arr)=>{
+                var sum=0
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!=0){
+                        sum=sum+arr[i]
+                    }
+                 }
+                console.log(sum)
+              }
+            oddarrow([1,2,3,4,5,6,7])
+
+
+
        // b)Convert all the strings to title caps in a string array.
+
+              function titleCase(str){
+              return str.toLowerCase().replace(/\b(\w)/g,s=>s.toUpperCase());
+                }
+            console.log([titleCase("i like to fly")]);
+             
        // c)Sum of all numbers in an array.
+
+              var sumArrow=(arr)=>{
+                   var sum=0;
+               for(var i=0;i<arr.length;i++){
+                      sum=sum+arr[i]                   
+                    }
+                   console.log(sum)
+                 }
+                  sumArrow([1,2,3,4,5,6,7,8,9,10])
+
        // d)Return all the prime numbers in an array.
+
+          
+
        // e)Return all the palindromes in an array.
-       //* f)Return median of two sorted arrays of the same size.
-       // g)Remove duplicates from an array.
-       // h)Rotate an array by k times.       */
+
+       const shortpalindromes=(words)=>words.filter((word)=>word.split("").reverse().join("")===word);
+         console.log(shortpalindromes(["civic","pens","pencil"]));
+            
          
          
          
