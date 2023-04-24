@@ -10,10 +10,46 @@
     <script>
 
         // a)Print odd numbers in an array.
+
+            ( function(odd){
+           for (var i =0;i<odd.length;i++){
+            if(odd[i]%2 !=0){
+             console.log([odd[i]]);
+            }}
+           })([1,2,3,4,5,6,7,8,17,29,30]);
+               
        // b)Convert all the strings to title caps in a string array.
+              
+                (function (fun) {
+               var word =fun.toUpperCase();
+                  word +=fun.split(' ')
+                  for (var i = 0; i < fun.length; i++) {
+                fun[i] = fun[i].charAt(0).toUpperCase() + fun[i].slice(1); 
+                
+                }
+               console.log([word]);
+               })(" i like to fly");
+
        // c)Sum of all numbers in an array.
+                 
+             (function(arr){
+                 sum=0;
+                 for(var i=0;i<arr.length;i++){
+                    sum=sum+arr[i]                   
+                }
+                console.log(sum)
+            })([1,2,3,4,5,6,7])
+ 
        // d)Return all the prime numbers in an array.
+
+                 
+
        // e)Return all the palindromes in an array.
+
+             
+
+
+
        // f)Return median of two sorted arrays of the same size.
        // g)Remove duplicates from an array.
        // h)Rotate an array by k times.
