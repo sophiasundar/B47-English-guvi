@@ -11,82 +11,103 @@
 
        // a)Print odd numbers in an array.  (anonymous function)
               
-            var oddAnno=function(arr){
-                var sum=0
-                for(var i=0;i<arr.length;i++){
-                    if(arr[i]%2!=0){
-                        sum=arr[i]
-                    }
-                    console.log(sum)
-                }
-             }
-            oddAnno([1,2,3,4,5,6,7])
-
+           var arr =[1,2,3,4,5,6,7,8,9,10]
+             function oddAnno(arr){
+                let odds=arr.filter(n=> n%2)
+                console.log(odds)
+             };
+                oddAnno(arr);
+                                        
        // b)Convert all the strings to title caps in a string array. (anonymous function)
                
-          var titlecap=function(fun){
-               var word =fun.toUpperCase();
-                  word +=fun.split(' ')
-                  for (var i = 0; i < fun.length; i++) {
-                fun[i] = fun[i].charAt(0).toUpperCase() + fun[i].slice(1); 
-                
-                }
-               console.log([word]);
-               }
-              titlecap(" i like to fly");
+               const string= function(){
+                function toTitleCase(str){
+                  str = str.toLowerCase().split(' ')
 
+                  for(i=0;i<str.length;i++){
+                    str[i]= str[i].charAt(0).toUpperCase()+str[i].slice(1);
+                  }
+                  return str.join(' ');
+                }
+                console.log(toTitleCase(" i like to fly "))
+              }
+              string();
+         
          // c)Sum of all numbers in an array.
-           
-            var sumAnno=function(arr){
-                 sum=0;
-                 for(var i=0;i<arr.length;i++){
-                    sum=sum+arr[i]                   
+
+            var a=[1,2,3,4,5,6,7]
+              function sumAnno(a){
+                var sum=0;
+                for(var i in a){
+                    sum += a[i]
                 }
                 console.log(sum)
-            }  
-            sumAnno([1,2,3,4,5,6,7])
+              } 
+              sumAnno(a)
 
        // d)Return all the prime numbers in an array. (anonymous function)
             
-             var primeanno=function(numArray){
-              
-                for(var i=2;i <= Math.sqrt.number;i++){
-                    numArray=numArray.filter((number));
-                 if(number%1 ===0){return false;
-                     }else
-                     return true;
-                     } 
-                    
-                     console.log(numArray)
-             }
-                    primeanno([1,2,3,4,5,6,7,8])
+             const array = [2,3,4,5,6,7,8,9,10,11,12,17]
+               function isprime(num){
+                for(let i=2; num>i;i++){
+                    if(num%i == 0){
+                        return false;
+                    }
+                }
+                return num > 1;
+               }
+               console.log(array.filter(isprime));
                     
        // e)Return all the palindromes in an array. (using anonymous function)
 
+                function palindromeArray(arr){
+                    let isPalindrome = true;
+                    for(let i=0;i< arr.length/2;i++){
+                        if(arr[i] !== arr[arr.length-i-1]){
+                            isPalindrome = false;
+                            break
+                        }
+                    }
+                    return isPalindrome
+                }
+                 console.log(palindromeArray([1,2,2,1]))
 
-
-
-
-
-       
        // f)Return median of two sorted arrays of the same size. (using anonymous function)
+
+              function median(a,b){
+                let c = [...a, ...b].sort((a,b) => a-b);
+                  const half = c.length/2|0;
+                  if(c.length%2)
+                  return c[half];
+                  return (c[half]+c[half-1])/2
+              }
+            const arr1 = [1,12,15,26,38];
+            const arr2 = [2,13,17,30,45];
+            console.log(median(arr1,arr2));
+                 
+
        // g)Remove duplicates from an array.(using anonymous function)
+
+            function dupe(Arr){
+               let  array= [...new Set(Arr)];
+                 console.log(array);
+              }
+              let Arr = [17,17,17,8,8,8];
+               dupe(Arr);
+
        // h)Rotate an array by k times. (using anonymous function)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                function rotate(num,k){
+                    let i = 0;
+                    while(i<k){
+                        num.unshift(num.pop())
+                           i++;
+                    }
+                    return num;
+                }
+               var num = [1,2,3,4,5,6,7,8,9,10]
+               var k = 3
+               console.log(rotate(num,k))
 
     </script>
 </body>
