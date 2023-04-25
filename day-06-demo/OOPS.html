@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    <script> 
+    
+    class Movie{
+
+        constructor(title,studio,rating) {
+            this.title=title,
+            this.studio=studio,
+            this.rating=rating
+            if(rating==null){
+                this.rating="PG"
+            }else{
+                this.rating=rating
+            }
+
+            }
+        }
+     
+   var flim1= new Movie("Casino Royale","Eon Productions","pg13")
+               console.log(flim1)
+            
+               /* //b) */ 
+    var flim2= new Movie("Casino Royale","Eon Productions","pg13")
+               console.log(flim2) 
+     
+
+    </script>
+</body>
+</html>
