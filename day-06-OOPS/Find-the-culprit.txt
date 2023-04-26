@@ -1,4 +1,4 @@
-  Part-1
+  Part-1   Find the culprits and nail them — debugging javascript
 
 1.  Find the culprit
   //alert( “I’m JavaScript!’);
