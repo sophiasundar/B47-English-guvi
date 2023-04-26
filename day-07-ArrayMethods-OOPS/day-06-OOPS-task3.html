@@ -8,8 +8,53 @@
 </head>
 <body>
     <script>
-        
+        // Write a “person” class to hold all the details.
 
+          /* class Person {
+
+               
+           constructor(name) {
+                 this.name = name;
+               }
+         introduceSelf(sop) {
+             console.log(`Hi! I'm ${this.name}`);
+                  }
+
+               } */
+
+               class Person{
+
+               constructor(name,age,gender) {
+                     this.name=name,
+                     this.age=age,
+                     this.gender=gender
+                    
+                  if(3>2){
+                    console.log(3)
+                }
+              }
+                 
+              getGender(a){
+              console.log(this.gender,this.age)
+              console.log(a)
+            }
+        }
+
+        var s1=new Person("sophia",20,"female")
+        console.log(s1)
+
+        var s2=new Person("shiny",null)
+        console.log(s2)
+        
+        s2.age=23
+        console.log(s2)
+
+        let {name,age,gender}=s2
+        console.log(name,age,gender)
+        console.log({...s2})
+
+        
+        
 
     </script>
 </body>
