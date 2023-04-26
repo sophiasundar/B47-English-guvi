@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraymethods-05</title>
+</head>
+<body>
+    <script>
+      // e)  Print the country which use US Dollars as currency
+
+             var request=new XMLHttpRequest(); 
+             request.open("GET","https://restcountries.com/v3.1/all");
+             request.send();
+             request.onload=function(){
+             var countryData= JSON.parse(request.response)
+             var countryData = JSON.parse(this.response);
+                 for(i=0;i<countryData.length;i++){
+        if(countryData[i].currencies[0].code==="USD")
+       {
+           console.log("name:",countryData[i].name,"==>",countryData[i].currencies[0].code)
+       }
+     }
+    }
+    </script>
+</body>
+</html>

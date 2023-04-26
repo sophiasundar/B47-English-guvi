@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraymethods-02</title>
+</head>
+<body>
+    <script>
+             
+     // B)Get all the countries with a population of less than 2 lakhs using Filter function      
+             var request=new XMLHttpRequest(); 
+             request.open("GET","https://restcountries.com/v3.1/all");
+             request.send();
+             request.onload=function(){
+            
+             var countryData=JSON.parse(this.response)
+             const populate=countryData.filter((element)=>{
+                     return element.population<200000;
+                  })
+                  console.log(populate);
+                }
+        
+    </script>
+</body>
+</html>
