@@ -38,12 +38,14 @@
               console.log(this.gender,this.age)
               console.log(a)
             }
-        }
-
+            introduceSelf() {
+             console.log(`Hi! I'm ${this.name}`);
+                  }
+           }
         var s1=new Person("sophia",20,"female")
         console.log(s1)
 
-        var s2=new Person("shiny",null)
+        var s2=new Person("shiny",null,"female")
         console.log(s2)
         
         s2.age=23
