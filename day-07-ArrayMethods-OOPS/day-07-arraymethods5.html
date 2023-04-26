@@ -16,7 +16,7 @@
              request.onload=function(){
              var countryData= JSON.parse(request.response)
              var countryData = JSON.parse(this.response);
-                 for(i=0;i<countryData.length;i++){
+             for(i=0;i<countryData.length;i++){
         if(countryData[i].currencies[0].code==="USD")
        {
            console.log("name:",countryData[i].name,"==>",countryData[i].currencies[0].code)
