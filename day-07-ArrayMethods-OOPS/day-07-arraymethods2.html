@@ -14,13 +14,10 @@
              request.open("GET","https://restcountries.com/v3.1/all",'true');
              request.send();
              request.onload=function(){
-            var countryData=JSON.parse(request.response)
-             const populate=countryData.filter((element)=>{
-                     return (element.population<200000);
-                  })
-                  console.log(populate);
-                }
-        
+             var countryData=JSON.parse(request.response)
+               var data=countryData.filter((element)=>element.population<200000).map(element=>element.name)
+              console.log(data);
+            }
     </script>
 </body>
 </html>
