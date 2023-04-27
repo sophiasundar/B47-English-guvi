@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce-method</title>
+</head>
+<body>
+    <script>
+       // reduce method help us to perform some operation.
+       //reduce method contains accumulator and element or value
+       var arr=[10,2,3,4]
+       console.log(arr.reduce((acc,element)=>acc+element))
+       console.log(arr.reduce((acc,element)=>acc+element,100))// with value
+            //for huge data use flowerbrace.   
+      
+
+            var students=[
+                {
+                    name:"alex",
+                    marks: 50
+                },
+                {
+                    name:"bob",
+                    marks: 60
+                },
+                {
+                    name:"karl",
+                    marks: 40
+                },
+            ]
+            
+            var addmarks=students.reduce((acc,element)=>acc+element.marks,0)
+                console.log(addmarks)          
+    </script>
+</body>
+</html>
