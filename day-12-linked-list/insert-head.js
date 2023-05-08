@@ -1,6 +1,6 @@
 class Node{
-    constructor(head,next = null){
-        this.head = head;
+    constructor(data ,next = null){
+        this.data = data;
         this.next = next;
     }
 }
@@ -20,8 +20,8 @@ let list = new LinkedList();
   console.log(list);
                                  // or use below
   */
-
-    let newNode = new Node(2);
+    let list = new LinkedList();
+    let newNode = new Node(2); 
        newNode.next = list.head;
        list.head = newNode;
        console.log(list);
