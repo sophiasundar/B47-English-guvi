@@ -47,38 +47,58 @@
         </tr>
       </tbody>
     </table>
+      <br><br><br>
 
+
+
+      <!-- form tag -->
     <form>
-     <label for="name">Name</label>
-      <input type="name" name="" id="name">
+        <!-- label tag -->
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" required placeholder="Enter your name">
       <br><br>
 
-      <label for="email">Email</label>
-      <input type="email" name="" id="email">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required placeholder="Enter your email address">
       <br><br>
 
-      <label for="pass">Password</label>
-      <input type="password" name="" id="pass">
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" required placeholder="Enter correct password">
       <br><br>
 
-      <label for="male" >Male</label>
-      <input type="radio" name="gender" id="male">
+      <!-- radio buttons, for single select use grouping name attribute -->
+      <label for="male">Male: </label>
+      <input type="radio" name="gender" id="male" value="male">
+      
+
+      <label for="female">Female: </label>
+      <input type="radio" name="gender" id="female" value="female">
+      
+
+      <label for="trans">Transgender: </label>
+      <input type="radio" name="gender" id="trans" >
       <br><br>
 
-      <label for="female" >Female</label>
-      <input type="radio" name="gender" id="female">
+      <!-- checkboxes -->
+
+      <label for="vehicle1">Cycle: </label>
+      <input type="checkbox" name="vehicle" id="vehicle1" value="Cycle">
+    
+      <label for="vehicle2">Bike: </label>
+      <input type="checkbox" name="vehicle" id="vehicle2" value="Bike">
+
+      <label for="vehicle3">Car: </label>
+      <input type="checkbox" name="vehicle" id="vehicle3" value="Car">
+
+      <label for="vehicle4">Truck: </label>
+      <input type="checkbox" name="vehicle" id="vehicle4" value="Truck">
+
+      <label for="vehicle5">Boat</label>
+      <input type="checkbox" name="vehicle" id="vehicle5" value="Boat">
+
       <br><br>
 
-      <label for="trans" >Transgender</label>
-      <input type="radio" name="gender" id="trans">
-       <br><br>
-       <label> </label>
-      <input type="checkbox" name="" id="">
-
-      <br><br>
       <input type="submit" value="Submit">
-
-      <input type="datetime-local" name="" id="">
 
     </form>
 </body>
