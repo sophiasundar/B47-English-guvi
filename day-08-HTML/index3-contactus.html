@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../day-09-HTML-CSS/style.css">
     <title>FORM</title>
+    <style>
+        
+        input{
+            display:block;
+            width: 325px;
+            margin-bottom: 8px;
+            text-align:center;
+
+        }
+    
+        .container{
+           background-color:aliceblue;
+           width:fit-content;
+           text-align: left;
+        }
+        
+        #submitBtn{
+            width:120px;
+            margin-left: 100px;
+            color:blue
+        }
+
+        textarea{
+            text-align:left;
+            font-style: bold;
+        }
+
+        h2{
+            color:goldenrod;
+            text-align: center;
+        }
+       
+    </style>
 </head>
 <body>
-    <form>
+    <div class="container">
+     <form>
+        <h2>Contact Us</h2>
+        <p>Do you have any question? Please reach out to us!!!</p>
+
         <label for="name">Name: </label>
-    </form>
+        <input type="text"  name="name" id="name" required placeholder="Enter your name">
+         
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email address">
+        
+
+        <label for="sub">Subject: </label>
+        <input type="text" name="subject" id="sub" required placeholder="Subject">
+        
+
+        <textarea name="des" id="des" cols="43" rows="7" placeholder="Description"></textarea>
+        
+
+            <input type="submit" value="Submit" id="submitBtn">   
+      </form>
+    </div>
 </body>
 </html>
