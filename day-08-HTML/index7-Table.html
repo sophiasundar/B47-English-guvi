@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Chart</title>
+    <style>
+       h2{
+        text-align: center;
+       }
+
+       .container{
+        text-align: center;
+        padding-left: 300px;
+       }
+
+       #state{
+        padding: 50px;
+       }
+
+       td{
+        padding: 15px 20px 15px 20px;
+        }
+    </style>
+</head>
+<body>
+     <h2>Health Chart</h2>
+     <!-- style -->
+     <div class="container">
+
+    <table border="1px solid black" cellspacing="0">
+       <!-- heading -->
+       <thead>
+         <tr>
+            <th rowspan="2" id="state">State of Health</th>
+            <th colspan="2">Fasting value</th>
+            <th>After Eating</th>
+        </tr>
+        <tr>
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>2 hours after eating</th>
+        </tr>
+      </thead>
+       <!-- body -->
+       <tbody>
+          <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+          </tr>
+          <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+          </tr>
+          <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+          </tr>
+       </tbody>
+    </table>
+</div>
+</body>
+</html>
