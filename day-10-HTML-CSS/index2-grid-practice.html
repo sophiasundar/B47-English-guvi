@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 530px;
+            
+            color:red;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto ;
+            grid-template-rows: auto auto auto auto;
+        }
+        .item{
+            padding: 43px;
+            font-size: 20px;
+        }
+
+        .header{
+            background-color: plum;
+        }
+
+        .home{
+            background-color: olive;
+        }
+ 
+        .pro-ser{
+            background-color: olive;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item home">HOme-Introduction</div>
+        <div class="item pro-ser">Products & services</div>
+        <div class="item Notify">Notification:
+        <div class="item footer">footer</div>
+        </div>
+    </div>
+</body>
+</html>
