@@ -1,0 +1,26 @@
+h3{
+    text-align: center;
+    border:10px;
+    border-color: black;
+    background-color: rgb(223, 236, 248);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input{
+    display:block;
+    width: 325px;
+    margin-bottom: 8px;
+    text-align:center;
+    
+}
+
+div{
+    padding:0px 20px 0px 20px;
+    
+}
+
+.form-control3{
+    padding-right: 150px !important;
+}
+
