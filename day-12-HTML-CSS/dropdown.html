@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown and MediaQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        .name{
+            border:1px solid black;
+            padding:5px;
+        }
+
+        .dropdown{
+            border:1px solid black;
+            padding: 10px;
+            width:500px;
+            background-color: black;
+            color: rgb(245, 245, 248);
+            position:relative;
+        }
+
+        .dropdownList{
+            display:none;
+            position: absolute;
+            left: 70px;
+            background-color: grey;
+        }
+
+        .dropdown:hover  .dropdownList{
+            display:block;
+        }
+
+        @media screen and (max-width:400px) {
+            .dropdown{
+                width: 80px;
+            }
+        }
+
+        /* within 400px color will be rendered , max 400 , width */
+        
+        @media screen and (max-width:400px) {
+            div{
+               background-color: blueviolet;
+               color:aliceblue;
+               font-size: 18px;
+            }
+        }
+    
+
+        /* beyond 500px then color will rendered , width , maximum */
+        @media screen and (min-width:500px) {
+            div{
+               background-color: pink;
+            }
+        }
+
+        /* ntw 600 to 780 */
+            @media (min-width:600px) and (max-width:780px)  {
+            div{
+               background-color: tomato;
+            }
+
+            p{
+                background-color: yellowgreen;
+            }
+            }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Quae similique nisi repellat nihil fugiat veniam delectus rem iste quos labore fugit repudiandae, modi dolorum voluptate beatae nobis repellendus odit dolorem? </p>
+       <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A unde nam enim doloribus adipisci dolores aspernatur, praesentium voluptatibus similique quisquam. Saepe tenetur nostrum, veritatis deserunt quis numquam magnam quidem unde?
+       </div>
+       <i class="fa-solid fa-caret-down"></i>
+        <div class="dropdown">Subjects  
+            <div class="dropdownList">
+             <div class="name">HTML</div>
+             <div class="name">CSS</div>
+             <div class="name">JavaScript</div>
+             <div class="name">ReactJS</div>
+             <div class="name">NodeJS</div>
+    </div>
+   </div> 
+</body>
+</html>
