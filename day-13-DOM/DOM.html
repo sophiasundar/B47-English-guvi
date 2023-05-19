@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+      
+      var division=document.createElement('div')
+      division.innerHTML="<h2>Hi, Welcome</h2>"
+      document.body.append(division)
+
+      //innerHTML
+      var section=document.createElement('div')
+      section.innerHTML="Hi, Welcome"
+      document.body.append(section)
+
+      //innerText
+      var text=document.createElement('div')
+      text.innerText="Hi-fi, Welcome"
+      document.body.append(text)
+      
+      // innerText does not accept 
+      var text1=document.createElement('div')
+      text1.innerText="<h2>Hi-fi, Welcome</h2>"
+      document.body.append(text1)
+
+    </script>
+</body>
+</html>
