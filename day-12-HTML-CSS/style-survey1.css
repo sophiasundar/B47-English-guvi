@@ -40,25 +40,30 @@ label[for=fname], label[for=lname]{
 }
 
 p{
-    margin-left:20px; 
+    padding-left:50px; 
+    
 }
+
 
    /* radio buttons */
 .p-1{
     margin-top: 1px;
     margin-right: 35px;
     margin-bottom: 1px;
-    margin-left: 50px;
-    padding-left: 30px;
-    /* padding-right:30px; */
+    margin-left: 63px;
+    /* padding-left: 30px;
+    padding-right:30px; */
 }
- /* for rating row */
+
+/* for rating row */
 .p-2{
     margin-top: 1px;
     margin-right: 15px;
     margin-bottom: 1px;
-    margin-left: 70px;
+    margin-left: 65px;
 }
+
+
 
  .ra2{
     margin-right: 5px;
@@ -81,7 +86,16 @@ p{
     border: 5px;
 }
 
-.radio1{
-    padding-right:50px;
+.flex-row2{
+    display:flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 70px;
+    background-color: rgb(240, 241, 243);
+    border: 5px;
 }
 
+
+/* .radio1{
+    padding-right:0px;
+} */
