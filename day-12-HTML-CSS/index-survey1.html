@@ -8,17 +8,17 @@
 
     <link rel="stylesheet" href="./style-survey1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Survey form</title>
+    <title>Survey form 1</title>
 </head>
 <body>
-
-    <form class="row g-3 border border-2 w-85 ms-3 p-2">
-
-
-    <h3>Customer Survey Form</h3> 
-
+    
     <div class="container">
-        <div class="row">
+     
+        <form class="row g-3 border border-2 w-85 ms-3 p-2">
+         
+         <h3>Customer Survey Form</h3>
+           
+            <div class="row">
             <div class="col-1"> <label for="fname">Name: </label>
             </div>
             <div class="col-1"> <label for="lname">    </label>
@@ -41,9 +41,64 @@
             </div>
         </div>
 
+        <div>
+            <label for="exp">Your Experience:</label>
+         </div>
+         <div class="row">
+           <div class="col-6">
+            <button type="button" class="btn btn-warning" data-mdb-toggle="rating" value="very poor"><i class="fa-regular fa-star"></i></button>
+            <button type="button" class="btn btn-warning"  data-mdb-toggle="rating" value="poor"><i class="fa-regular fa-star"></i></button>
+            <button type="button" class="btn btn-warning"  data-mdb-toggle="rating" value="average"><i class="fa-regular fa-star"></i></button>
+            <button type="button" class="btn btn-warning"  data-mdb-toggle="rating" value="good"><i class="fa-regular fa-star"></i></button>
+            <button type="button" class="btn btn-warning" data-mdb-toggle="rating" value="excellent"><i class="fa-regular fa-star"></i></button>
+         </div>
+       </div>
+     
+       <div class="row">
+         <div class="col">
+           <p>Overall, how would you rate your experience with us?</p>
+         </div>
+       </div>
+     
+       <div class="row">
+         <div class="col">
+           <label for="rating">How satisfied are you with ?</label>
+            
+           <div class="d-flex flex-row">
+             <div class="p-2 ra1">            </div>
+             <div class="p-2 ra2">very unsatisfied</div>
+             <div class="p-2 ra1">unsatisfied</div>
+             <div class="p-2 ra1">Neutral</div>
+             <div class="p-2 ra1">satisfied</div>
+             <div class="p-2 ra3">very satisfied</div>
+           </div>
+     
+           <div class="d-flex flex-row1">
+               
+             <div class="p-1 radio1">Purchase</div>
+             <div class="p-1"><div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+             </div></div>
+             <div class="p-1 radio2" ><div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+             </div></div>
+             <div class="p-1 radio3"><div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+             </div></div>
+             <div class="p-1 radio4"><div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+             </div></div>
+             <div class="p-1  radio5"><div class="form-check">
+               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+             </div></div>
+           </div>
+         
+          
+        </form>
+    </div>
+  
 
     </div>
-    </div>
-    </form>
+    
 </body>
 </html>
