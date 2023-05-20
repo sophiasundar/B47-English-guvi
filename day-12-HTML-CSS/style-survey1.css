@@ -46,10 +46,11 @@ p{
    /* radio buttons */
 .p-1{
     margin-top: 1px;
-    margin-right: 40px;
+    margin-right: 35px;
     margin-bottom: 1px;
-    margin-left: 40px;
-    padding-left: 60px;
+    margin-left: 50px;
+    padding-left: 30px;
+    /* padding-right:30px; */
 }
  /* for rating row */
 .p-2{
