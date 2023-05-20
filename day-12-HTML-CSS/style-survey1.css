@@ -1,3 +1,35 @@
-.css{
-    
+h3{
+    text-align: center;
+    border: 1px solid #ccc;
+    border-color: black;
+    background-color: rgb(223, 236, 248);
+    padding: 20px 40px 20px 40px;
 }
+
+
+
+input[type=text]{
+    display:block;
+    width: 300px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left: 100px;
+}
+
+input[type=email]{
+    display:block;
+    width: 870px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left:100px;
+}
+
+label{
+    margin-left: 100px;
+    margin-right: 320px;
+    }
+
+label[for=fname], label[for=lname]{
+    margin-bottom: 3px;
+}
+

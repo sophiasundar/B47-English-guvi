@@ -11,6 +11,12 @@
     <title>Survey form</title>
 </head>
 <body>
+
+    <form class="row g-3 border border-2 w-85 ms-3 p-2">
+
+
+    <h3>Customer Survey Form</h3> 
+
     <div class="container">
         <div class="row">
             <div class="col-1"> <label for="fname">Name: </label>
@@ -19,8 +25,8 @@
              </div>
         </div>
         <div class="row">
-            <div class="col-6"> <input type="text" id="fname" name="firstname" placeholder="Enter your firstname"></div>
-            <div class="col-1"> <input type="text" id="lname" name="lastname" placeholder="Enter your lastname"></div>
+            <div class="col-6">  <input type="text" class="form-control1" id="fname" aria-label="First name" aria-required="true"></div>
+            <div class="col-1"> <input type="text" class="form-control2" id="lname" aria-label="Last name" aria-required="true"></div>
         </div>
         <div class="row">
             <div class="col-6"> <label for="fname">first</label></div>
@@ -29,14 +35,15 @@
         
         <div class="row">
             <div col-12><label for="email">Email: </label>
-            </div>
+          </div>
             <div class="row">
-                <div col-12><input type="email" id="email" name="email" placeholder="Enter your email address">
-                </div>
+                <div col-12><input type="email" class="form-control3" id="email" aria-label="email" aria-required="true">
+            </div>
         </div>
 
 
     </div>
     </div>
+    </form>
 </body>
 </html>
