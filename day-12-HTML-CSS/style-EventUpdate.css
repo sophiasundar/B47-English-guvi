@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body{
     display: flex;
     height: 100vh;
@@ -5,9 +9,10 @@ body{
     align-items: center;
     padding:10px;
     border-color: black;
-    border:"1px solid black";
     background-color: aliceblue;
+    box-sizing: border-box !important;
 }
+
 .container{
     max-width: 700px;
     width:100%;
@@ -15,6 +20,8 @@ body{
     border:"1px solid black";
     border-color: grey !important;
 }
+
+
 
 h3 , p{
     text-align: center;
@@ -32,12 +39,45 @@ input{
     margin-left: 200px;
 }
 
-label, input{
-        display:inline;
-   
-    }
+input[type=number]{
+    display:block;
+    width: 200px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left: 200px;
+}
 
-    button[type=submit],[type=cancel]{
+ button[type=submit],[type=cancel]{
         margin-top:50px;
         margin-left: 100px;
     }
+
+ @media (max-width: 575.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+     input,input[type=number]{
+          width: 100%;
+     }
+     button{
+       width:100%;
+     }
+}
+
+/* // Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+      input[type=text]{
+          width: 100%;
+     }
+     input[type=email]{
+       width: 100%;
+     }
+     button{
+       width:100%;
+     }
+} */
