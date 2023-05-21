@@ -1,9 +1,6 @@
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {  
-    h3, input[type=text],input[type=email],div,
-    label,label[for=comments],label[for=fname], label[for=lname],
-    p,tbody,td,tr:nth-child(even),.fa-star,
-    textarea,button{
+   {
          width: 100%;
     } 
 }
