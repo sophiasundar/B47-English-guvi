@@ -98,5 +98,15 @@ tbody{
    @media (max-width: 575.98px) {  
       .container{
          max-width: 100%;
+            width: 100%;
     } 
+       input[type=text]{
+           width: 100%;
+      }
+      input[type=email]{
+        width: 100%;
+      }
+      button{
+        width:100%;
+      }
 }
