@@ -22,7 +22,19 @@ h3 , p{
     text-align: center;
     border:10px;
     border-color: black;
-    /* background-color: grey; */
     padding-top: 2px;
     padding-bottom: 5px;
 }
+
+input{
+    display:block;
+    width: 200px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left: 200px;
+}
+
+label, input{
+        display:inline;
+   
+    }
