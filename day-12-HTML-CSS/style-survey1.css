@@ -50,3 +50,11 @@ td{
   .form-check-input{
     /* padding-right:15px; */
   }
+
+  .table1{
+      margin-left:0px;
+  }
+
+  .container{
+    float:left;
+  }
