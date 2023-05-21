@@ -1,3 +1,20 @@
+body{
+    display: flex;
+    height: 180vh;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    
+}
+
+.container{
+    max-width: 700px;
+    width:100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+}
+
 h3{
     text-align: center;
     border:10px;
@@ -9,7 +26,7 @@ h3{
 
 input[type=text]{
     display:block;
-    width: 300px;
+    width: 200px;
     margin-bottom: opx;
     text-align:center;
     margin-left: 50px;
@@ -17,7 +34,7 @@ input[type=text]{
 
 input[type=email]{
     display:block;
-    width: 300px;
+    width: 200px;
     margin-bottom: opx;
     text-align:center;
     margin-left:50px;
@@ -34,6 +51,7 @@ label{
 label[for=comments]{
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 0px;
 }
 label[for=fname], label[for=lname]{
     margin-bottom: 3px;
@@ -50,13 +68,6 @@ tbody{
     padding-right: 10px;
   }
 
-  /* .tbody1{
-    
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-  } */
-
   td{
     padding-left: 10px;
     padding-right: 10px;
@@ -66,17 +77,13 @@ tbody{
     background-color: #f2f2f2;
 }
 
-  .table1{
-      margin-left:0px;
-  }
-
   .fa-star{
     background-color:yellow;
     margin-left: 30px !important;
     }
 
     textarea{
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     button{
@@ -86,21 +93,10 @@ tbody{
         width:90px;
         margin-left: 40px;
     }
-    /* // X-Small devices (portrait phones, less than 576px) */
-    @media (max-width: 575.98px) {  }
     
-    /* // Small devices (landscape phones, less than 768px) */
-    @media (max-width: 767.98px) {  }
-    
-    /* // Medium devices (tablets, less than 992px) */
-    @media (max-width: 991.98px) {  }
-    
-    /* // Large devices (desktops, less than 1200px) */
-    @media (max-width: 1199.98px) { }
-    
-    /* // X-Large devices (large desktops, less than 1400px) */
-    @media (max-width: 1399.98px) {  }
-    
-    /* // XX-Large devices (larger desktops)
-    // No media query since the xxl breakpoint has no upper bound on its width */
-    
+    /* X-Small devices (portrait phones, less than 576px) */
+   @media (max-width: 575.98px) {  
+      .container{
+         max-width: 100%;
+    } 
+}
