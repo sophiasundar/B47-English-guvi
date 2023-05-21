@@ -15,7 +15,19 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {  
-
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+      input[type=text]{
+          width: 100%;
+     }
+     input[type=email]{
+       width: 100%;
+     }
+     button{
+       width:100%;
+     }
 }
 
 /* // Large devices (desktops, less than 1200px) */
