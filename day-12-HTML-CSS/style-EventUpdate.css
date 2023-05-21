@@ -4,6 +4,9 @@ body{
     justify-content: center;
     align-items: center;
     padding:10px;
+    border-color: black;
+    border:"1px solid black";
+    background-color: aliceblue;
 }
 .container{
     border:"1px solid black";
@@ -37,4 +40,9 @@ input{
 label, input{
         display:inline;
    
+    }
+
+    button[type=submit],[type=cancel]{
+        margin-top:50px;
+        margin-left: 100px;
     }
