@@ -71,6 +71,7 @@ p{
     border: 5px;
 }
 
+/* background-color: #f2f2f2 */
 .radio1{
     padding-right:50px;
 }
@@ -80,8 +81,8 @@ p{
     margin-right: 35px;
     margin-bottom: 1px;
     margin-left: 63px;
-    /* padding-left: 30px;
-    padding-right:30px; */
+    padding-left: 30px;
+    padding-right:30px;
 }
 
 /* for rating row */

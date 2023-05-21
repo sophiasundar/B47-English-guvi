@@ -2,7 +2,7 @@ h3{
     text-align: center;
     border:10px;
     border-color: black;
-    background-color: rgb(223, 236, 248);
+    background-color: #f2f2f2;
     padding-top: 2px;
     padding-bottom: 5px;
 }
@@ -12,7 +12,7 @@ input[type=text]{
     width: 300px;
     margin-bottom: opx;
     text-align:center;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 input[type=email]{
@@ -20,7 +20,7 @@ input[type=email]{
     width: 300px;
     margin-bottom: opx;
     text-align:center;
-    margin-left:100px;
+    margin-left:50px;
 }
 
 div{
@@ -29,10 +29,12 @@ div{
 }
 
 label{
-    margin-left: 100px;
-    margin-right: 320px;
+    margin:5px 50px 5px 50px;
     }
-
+label[for=comments]{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 label[for=fname], label[for=lname]{
     margin-bottom: 3px;
 }
@@ -42,19 +44,47 @@ p{
     
 }
 
-td{
+tbody{
     text-align: center;
-    padding-left: 45px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .form-check-input{
-    /* padding-right:15px; */
+
+  /* .tbody1{
+    
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  } */
+
+  td{
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
   .table1{
       margin-left:0px;
   }
 
-  .container{
-    float:left;
-  }
+  .fa-star{
+    background-color:yellow;
+    margin-left: 30px !important;
+    }
+
+    textarea{
+        margin-left: 40px;
+    }
+
+    button{
+        background-color: #f2f2f2;
+        border: 10px;
+        border-color: black;
+        width:90px;
+        margin-left: 40px;
+    }
+
+    
