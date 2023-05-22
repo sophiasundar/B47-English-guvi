@@ -67,10 +67,10 @@ input[type=number]{
            width: 100%;
    } 
       input{
-          width: 100%;
+          width: 50%;
      }
      input[type=number]{
-       width: 100%;
+       width: 50%;
      }
      button{
        width:50%;
@@ -84,10 +84,10 @@ input[type=number]{
          width: 100%;
  } 
     input{
-        width: 100%;
+        width: 50%;
    }
    input[type=number]{
-     width: 100%;
+     width: 50%;
    }
    button{
      width:25%;
