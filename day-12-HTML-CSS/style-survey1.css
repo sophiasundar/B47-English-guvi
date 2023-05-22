@@ -29,7 +29,7 @@ input[type=text]{
     width: 200px;
     margin-bottom: opx;
     text-align:center;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 input[type=email]{
@@ -37,7 +37,7 @@ input[type=email]{
     width: 200px;
     margin-bottom: opx;
     text-align:center;
-    margin-left:30px;
+    margin-left:50px;
 }
 
 div{
@@ -46,7 +46,7 @@ div{
 }
 
 label{
-    margin:5px 30px 5px 30px;
+    margin:5px 50px 5px 50px;
     }
 label[for=comments]{
     margin-top: 10px;
@@ -113,7 +113,7 @@ tbody{
            width: 100%;
    } 
       input[type=text]{
-          width: 100%;
+          width: 50%;
      }
      input[type=email]{
        width: 50%;
