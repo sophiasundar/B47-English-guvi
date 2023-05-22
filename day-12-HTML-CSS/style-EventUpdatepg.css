@@ -2,3 +2,11 @@
     border: 3px soild black;
     
 }
+h3 , p{
+    text-align: center;
+    border:10px;
+    border-color: black;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 350px;
+}
