@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set interval</title>
     <style>
+        /* styling */
         #test{
             height:100px;
             width:100px;
@@ -14,18 +15,26 @@
     </style>
 </head>
 <body>
+    <!-- getting id test -->
     <div id="test"></div>
     <script>
-        var id= setInterval(anim, 100);
+        //   set interval(func,delays)
+        var id= setInterval(anim, 100); 
+        // initiating for count
         var a=0;
+        //  starting with function
         function anim(){
+            // increasing by 10
             a = a + 10;
             if(a == 300){
                 //stop the anim
+                // clear interval means by which count it should stop
                clearInterval(id)
             }else{
                //continue with anim
+               // getting id
              var divMove = document.getElementById("test");
+             // shifting to right
              divMove.style.marginLeft= a + "px";
                console.log(a);
             }
