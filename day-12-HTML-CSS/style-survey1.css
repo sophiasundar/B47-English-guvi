@@ -29,7 +29,7 @@ input[type=text]{
     width: 200px;
     margin-bottom: opx;
     text-align:center;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 input[type=email]{
@@ -37,16 +37,16 @@ input[type=email]{
     width: 200px;
     margin-bottom: opx;
     text-align:center;
-    margin-left:50px;
+    margin-left:30px;
 }
 
 div{
-    padding:0px 20px 0px 20px;
+    padding:0px 10px 0px 10px;
     
 }
 
 label{
-    margin:5px 50px 5px 50px;
+    margin:5px 30px 5px 30px;
     }
 label[for=comments]{
     margin-top: 10px;
@@ -58,17 +58,12 @@ label[for=fname], label[for=lname]{
 }
 
 p{
-    padding-left:50px; 
+    padding-left:30px; 
     
 }
 
 tbody{
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  td{
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -111,6 +106,36 @@ tbody{
       }
 }
 
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+      input[type=text]{
+          width: 100%;
+     }
+     input[type=email]{
+       width: 50%;
+     }
+     button{
+       width:25%;
+     }
+}
 
-
-
+/* // Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+      input[type=text]{
+          width: 100%;
+     }
+     input[type=email]{
+       width: 100%;
+     }
+     button{
+       width:100%;
+     }
+} */
