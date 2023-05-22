@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Timeout</title>
+    <style>
+        /* styling */
+        #test{
+            height:100px;
+            width:100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div><br>
+    <button id="button" onclick="stopAnim()">stop</button>
+    <script>
+       var id=setTimeout(anim,4000)
+       function anim(){
+        var divSize=document.getElementById('test')
+        divSize.style.width="200px"
+        divSize.style.backgroundColor="pink"
+        //    DOM append
+        var ptext=document.createElement('p')
+        ptext.innerText="Animation completed successfully"
+        document.body.append(ptext)
+       }
+
+
+       function stopAnim(){
+        console.log(1)
+        //stop the animation
+        clearTimeout(id)
+        // Dom append
+        var ptext=document.createElement('p')
+        ptext.innerText="Animation stopped successfully"
+        document.body.append(ptext)
+       }
+    </script>
+</body>
+</html>
