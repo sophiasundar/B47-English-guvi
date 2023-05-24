@@ -31,13 +31,13 @@ const navBar = document.createElement("h1");
      btn1.setAttribute("id","delete")
      btn1.setAttribute("onClick","Delete()");
 
-     let btn2 = document.createElement("button");  //16
+     let btn2 = document.createElement("button");  
       btn2.innerText =".";
       btn2.setAttribute("type","number");
       btn2.setAttribute("id","dotbtn");
       btn2.setAttribute("onClick","Display('.')");
 
-      let btn3 = document.createElement("button");   // 7
+      let btn3 = document.createElement("button");  
        btn3.innerText ="*";                             
        btn3.setAttribute("type","number");
        btn3.setAttribute("id","mulbtn");
@@ -124,10 +124,10 @@ const navBar = document.createElement("h1");
        let btn17 = document.createElement("button");
         btn17.innerText ="00";
         btn17.setAttribute("type","number");
-        btn17.setAttribute("id","doublezerobtn");   //
+        btn17.setAttribute("id","doublezerobtn");   
         btn17.setAttribute("onClick","Display('00')");
 
-        let btn18 = document.createElement("button");  //16
+        let btn18 = document.createElement("button");  
         btn18.innerHTML ="%";
         btn18.setAttribute("type","number");
         btn18.setAttribute("id","modbtn");
