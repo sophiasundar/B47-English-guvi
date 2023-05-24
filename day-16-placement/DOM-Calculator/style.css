@@ -19,7 +19,6 @@
     padding: 15px;
     border-radius: 30px;
     display: grid; 
-    grid-template-columns: repeat(4,68px);                
 }
 
 input{
