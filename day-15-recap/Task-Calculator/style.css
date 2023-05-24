@@ -1,0 +1,35 @@
+.container{
+    border:3px solid gray;
+    height:300px;
+    width:300px;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+}
+
+#form{
+    background-color: rgb(240, 236, 236);
+    width:280px;
+    height:45px;
+    margin: 20px 5px 2px 5px;
+    border-radius: 5px;
+}
+
+.btn{
+   width:70px;
+   height:40px;
+}
+
+.btn1{
+    width:70px;
+    height:40px;
+}
+
+.clearall{
+    width:70px;
+    height:40px;
+}
+
+.equalbtn{
+    width:70px;
+    height:40px;
+}
