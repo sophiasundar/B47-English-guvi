@@ -41,7 +41,7 @@ const navBar = document.createElement("h1");
        btn3.innerText ="*";                             
        btn3.setAttribute("type","number");
        btn3.setAttribute("id","mulbtn");
-       btn3.setAttribute("onClick","Display('*')");
+       btn3.setAttribute("onClick","Display('x')");
 
        let btn4 = document.createElement("button");
         btn4.innerText ="7";
