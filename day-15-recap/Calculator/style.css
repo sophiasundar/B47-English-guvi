@@ -1,0 +1,66 @@
+.container{
+    display: inline-block;
+    border:3px solid gray;
+    height:300px;
+    width:300px;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    font-size: 15px;
+    font-weight: 15px;
+}
+
+#form{
+    display: inline-block;
+    background-color: rgb(240, 236, 236);
+    width:280px;
+    height:45px;
+    margin: 20px 5px 2px 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 30px;
+}
+
+.btn{
+   display: inline-block;
+   width:70px;
+   height:40px;
+   color:rgb(6, 130, 255);
+}
+
+#backspace{
+   color:black; 
+}
+
+#allclear{
+   color:red;
+}
+
+.btn1{
+    display: inline-block;
+    width:70px;
+    height:40px;
+    
+}
+
+.clearall{
+    display: inline-block;
+    width:70px;
+    height:40px;
+}
+
+.equalbtn{
+    display: inline-block;
+    width:70px;
+    height:40px;
+    background-color: rgb(5, 172, 255);
+}
+
+.h1{
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+}
+
