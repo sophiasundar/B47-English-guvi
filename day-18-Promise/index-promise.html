@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    
+</head>
+<body>
+    
+   <script>
+    const p1=new Promise((resolve,reject)=>{
+         resolve('hey')
+         reject('No')
+    })
+    console.log(p1)
+
+    const p2=new Promise((resolve,reject)=>{
+        reject('No') 
+        resolve('hey')
+    })
+    console.log(p2)
+
+    var age= 21;
+    const p3=new Promise((resolve,reject)=>{
+             if(age>18){
+                resolve("Eligible to vote")
+             }
+             else{
+                reject("Not eligible to vote")
+             }
+    })
+     console.log(p3)
+
+     var age= parseInt(prompt('Enter your age:'));
+    const p4 =new Promise((resolve,reject)=>{
+             if(age>18){
+                resolve("Eligible to vote")
+             }
+             else{
+                reject("Not eligible to vote")
+             }
+    })
+     console.log(p4)
+
+       p4.then((res)=>console.log(res)).catch((err)=>{console.log(err)})
+             //catch helps us to handle the error
+
+   </script>
+
+</body>
+</html>

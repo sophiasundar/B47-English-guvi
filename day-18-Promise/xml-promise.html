@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML-promise</title>
+</head>
+<body>
+    <script>
+        console.log(1)
+        var request=new XMLHttpRequest();
+        request.open("GET","https://restcountries.com/v3.1/all");
+        request.send();
+        request.onload=function(){
+            var countriesData =JSON.parse(request.response)
+
+            const data=new Promise((resolve,reject)=>{
+             for(var i=0;i<countriesData.length;i++){
+              resolve("CountryName-"+countriesData[i].name.common+" Flags-"+countriesData[i].flags.png)
+             }
+        })
+        console.log(data)
+
+        data.then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+        
+        
+    }
+        // const p1=new Promise((resolve,reject)=>{
+        //  resolve('hey')
+        //  reject('No')
+        //    })
+        //   console.log(p1)
+    </script>
+</body>
+</html>
