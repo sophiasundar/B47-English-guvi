@@ -4,7 +4,7 @@
     justify-content: center;
     height:486px;
     width: 500px;
-    margin-left:350px;
+    margin-left:50px;
     margin-top:50px;
     border-radius: 5px;
 }
@@ -18,3 +18,22 @@
     padding-bottom: 220px;
     background-image: linear-gradient(orange,white,green);
 }
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  
+    .container{
+           width: 100%;
+           margin-left:10px;
+           margin-right: 100px;
+      } 
+  }
+  
+  /* // Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {  
+    .container{
+        width: 80%;
+        margin-left:50px;
+        margin-right: 10px;
+   }
+  }
