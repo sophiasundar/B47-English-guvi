@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cityname</title>
+</head>
+<body>
+    <script>
+        // extract the cityName from restcountries and pass it to weather API
+        var req=fetch(`https://api.openweathermap.org/data/2.5/weather?q=london&appid=2edf94c2e5d04ea55dabd9c813b51c00`)
+        .then((res)=>res.json())
+        .then((data)=>console.log(data))
+
+
+        var req1=fetch(`https://restcountries.com/v3.1/all`)
+        .then((res)=>{
+            console.log(res)
+        })
+        
+        .then((data)=>{
+            return data.json()
+        })
+
+
+
+    </script>
+</body>
+</html>
