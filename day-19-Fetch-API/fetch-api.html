@@ -9,8 +9,8 @@
 <body>
     <script>
         
-
-        var req=fetch(`https://api.openweathermap.org/data/2.5/weather?q=london&appid=2edf94c2e5d04ea55dabd9c813b51c00`)
+        const apiKey = 'your_api_key';
+        var req=fetch(`https://api.openweathermap.org/data/2.5/weather?q=london&appid=`)
         .then((res)=>res.json())
         .then((data)=>console.log(data))
 
