@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let url=`https://647588e1e607ba4797dbfe9f.mockapi.io/user`
+         console.log(url)   
+     
+        //  asyn await
+        //  read=>GET method
+   
+         async function getUsersData(){
+            let data = await fetch(url)
+            let res = await data.json()
+              console.log(res)
+              console.table(res)
+         }
+         getUsersData()
+
+         //Read with id
+         const id=1//passing id as an endpoint
+         console.log(`${url}/${id}`)//template literals
+         console.log(url+'/'+id)//concat
+          async function getUsersDataById(){
+            let data = await fetch(`${url}/${id}`)
+            let res=await data.json();
+            console.log(res)
+
+        }
+        getUsersDataById()
+
+        //create=>POST method
+        async function createUserData(){
+            let newUser={
+               "name":"Mr newuser",
+               "email":"newuser@gmail.com"
+            }
+            let data=await fetch(url,{
+                method:"POST",
+                headers:{"content-Type":"application/json"},
+                //server accept in a string so we use stringify
+                body:JSON.stringify(newUser)
+            })
+            let res = await data.json()
+            console.log(res)
+        }
+         createUserData()
+
+         //update by id PUT method
+
+         async function updateUsersData(){
+            let updateUser={
+                "name":"Mr B47 WD",
+                "email":"b47guvi@gmail.com"
+            }
+
+            let data=await fetch(url+"/4",{
+                method:"PUT",
+                headers:{"content-Type":"application/json"},
+                body:JSON.stringify(updateUser)
+            })
+            let res=await data.json()
+            console.log(res)
+         }
+         updateUsersData()
+
+         //delete DELETE method
+
+         async function deleteUsersData(id){
+               let data= await fetch(url+'/'+id,{
+                method:'DELETE'
+               })
+               let res=await data.json();
+               console.log(res)
+         }
+         deleteUsersData(21)
+
+
+         //CRUD IN Js
+         //using Mock API
+         //HTML=> DOM manipulation
+         //css/ bootstrap
+   </script>
+</body>
+</html>
