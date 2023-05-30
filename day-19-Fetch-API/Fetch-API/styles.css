@@ -14,3 +14,7 @@
     display: flex;
     padding-top: 10px;
 }
+
+.card-header{
+    background-color: rgb(162, 204, 255);
+}
