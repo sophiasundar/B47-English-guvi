@@ -8,7 +8,7 @@ async function promise(){
      var data = document.querySelector('.space')  
      
       data.innerHTML=` 
-         
+      <div class="img"><img src="https://th.bing.com/th/id/OIP.DlukmfToYVUpp2e5IrvxlAHaH9?w=173&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
          <div class="tamil"><h4>${res.sect_tam}-${res.chapgrp_tam}</h4></div><br>
          <div class="tamil"><h5>அதிகாரம் : ${res.chap_tam}</h5></div><br>
          <div class="tamil"><h5>திருக்குறள்:<br></h5></div>
