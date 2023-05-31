@@ -8,16 +8,20 @@ async function promise(){
      var data = document.querySelector('.space')  
      
       data.innerHTML=` 
-         <div class="tamil"><h4>${res.sect_tam}-${res.chapgrp_tam}</h4></div>
-         <div class="tamil"><h5>அதிகாரம் : <br>${res.chap_tam}</h5></div><br>
-         <div class="tamil"><h6>திருக்குறள்: <br>${res.line1}</h6></div>
+         
+         <div class="tamil"><h4>${res.sect_tam}-${res.chapgrp_tam}</h4></div><br>
+         <div class="tamil"><h5>அதிகாரம் : ${res.chap_tam}</h5></div><br>
+         <div class="tamil"><h5>திருக்குறள்:<br></h5></div>
+         <div class="tamil"><h6> ${res.line1}</h6></div>
          <div class="tamil"><h6>${res.line2}</h6></div>
-         <div class="tamil"><h6>குறள் விளக்கம்: ${tam_exp}</h6></div>
+         <div class="tamil"><h5>குறள் விளக்கம்: <br> <h6>${res.tam_exp}</h6></h5></div>
+         <br><hr>
 
-         <div class="english"><h4>${res.sect_eng}-${res.chapgrp_eng}</h4></div>
-         <div class="english"><h5>Chapter: <br>${res.chap_eng}</h5></div>
-         <div class="english"><h6>Thirukkural: <br>${res.eng}</h6></div>
-         <div class="english"><p>Kural Explanation: ${eng_exp}</p></div>
+         <div class="english"><h4>${res.sect_eng}-${res.chapgrp_eng}</h4></div><br>
+         <div class="english"><h5>Chapter: ${res.chap_eng}</h5></div><br>
+         <div class="english"><h5>Thirukkural: <br> <h6>${res.eng}</h6> </h5></div><br>
+         <div class="english"><h5>Kural Explanation: <br> <h6>${res.eng_exp}</h6> </h5></div><br>
+        
         
       `
 }
@@ -27,4 +31,6 @@ promise()
  var button= document.querySelector('.btn')
    button.addEventListener('click',promise)
 
-    //<div class="english"><h6>${res.line2}</h6></div>
+    
+
+    
