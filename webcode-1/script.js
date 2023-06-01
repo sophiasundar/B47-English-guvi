@@ -1,45 +1,48 @@
+// https://pokeapi.co/api/v2/pokemon/${id}
+var data = document.querySelector(".container")
+var url= "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=50/${id}"
+
 async function poke(){
-    const id= document.getElementById('Pokemon')
-    var data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    const number= document.getElementById('Pokemon').value
+    
+    try{
+    var data = await fetch('url')
     const res  = await data.json()
       console.log(res)
-
-     var data = document.querySelector(".container")
-
-      data.innerHTML=`
-    <img src="https://www.shutterstock.com/image-photo/kherson-ukraine-august-27-2016-260nw-474817792.jpg">
-    <table class="table">
-       <thead>
-       <tr>
-       <th scope="col">ID: </th>
-       <th scope="col">Name: </th>
-       <th scope="col">Ability: </th>
-       <th scope="col">Weight: </th>
-       <th scope="col">Moves: </th>
-       </tr>
-      </thead>
-      
-      <tbody>
-      <tr>
-      <th scope="row"></th>
-      <td><h5></h5></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      </tr>
-      <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      </tr>
-       <tr>
-       <th scope="row">3</th>
-       <td colspan="2">Larry the Bird</td>
-       <td>@twitter</td>
-       </tr>
-       </tbody>
-       </table>
-       <h5>Hello world</h5>`
+     
+      document.getElementsById("Pokemon").value=""
+     const division= document.createElement('div')
+      division.classList.add('col-lg-4 col-md-6 col-sm-12')
+      division.innerHTML=`<div class="card" style="width: 18rem;">
+      <div class="card-header">
+      <h4> Name:${res.name}</h4>
+      </div>
+      <div class="card-body">
+      <ul class="list-group list-group-flush"><h5>POKEMON details</h5>
+        <li class="list-group-item"><h5>ID-NO:<h6>${res.id}</h6></h5></li>
+        <li class="list-group-item"><h5>ABILITY:<h6>${res.abilities[0].ability.name}</h6></h5></li>
+        <li class="list-group-item"><h5>MOVES:<h6>${res.weight}</h6></h5></li>
+        <li class="list-group-item"><h5>WEIGHT:<h6>${res.moves[0].move.name}</h6></h5></li>
+      </ul>
+      </div>
+    </div>`
+        
+    data.appendchild(division)
+    
     }
-        poke()
+    catch{
+       alert("Enter upto 50 ID's")
+    }  
+      
+    }
+
+    async function pokedex(){
+      for(var i=1;i<=number;i++){
+         await poke(i)
+      }
+    }
+     pokedex()
+
+     var button= document.querySelector('.btn')
+     button.addEventListener('click',poke)
+
