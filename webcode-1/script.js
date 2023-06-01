@@ -15,7 +15,7 @@ async function poke(){
     //fetching api
     async function pokemonapi(id){
         try {
-            const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}?limit=50&offset=50`);
+            const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
             const res = await data.json();
             console.log(res); 
             
