@@ -41,5 +41,5 @@ async function poke(){
        </tbody>
        </table>
        <h5>Hello world</h5>`
-}
+    }
         poke()
