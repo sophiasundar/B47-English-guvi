@@ -1,5 +1,5 @@
 // https://pokeapi.co/api/v2/pokemon/${id}
-var data = document.querySelector(".container")
+var data = document.querySelector(".flex-md-row")
 var url= "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=50/${id}"
 
 async function poke(){
