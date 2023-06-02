@@ -1,8 +1,8 @@
-var container=document.createElement("div");
-container.className="container";
+var coin=document.createElement("div");
+coin.className="container";
 var row =document.createElement("div");
 row.className="row"
-container.append(row)
+coin.append(row)
 
 var res=fetch("https://api.coinstats.app/public/v1/coins?skip=0&limit=");
 res.then((data)=>data.json())
@@ -26,5 +26,5 @@ function fun(data1){
 </div>` 
     }
 
-    document.body.append(container)
+    document.body.append(coin)
 }
