@@ -12,8 +12,7 @@ res.then((data)=>data.json())
 function fun(data1){
     console.log(data1.coins);
     for(var i=0;i<data1.coins.length;i++){
-        row.innerHTML +=`
- <div class="col-lg-3">
+        row.innerHTML +=` <div class="col-lg-3">
     <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
         <div class="card-header"> ${data1.coins[i].id.toUpperCase()}</div>
          <img src="${data1.coins[i].icon}" class="card-img-top" alt="crypto">
