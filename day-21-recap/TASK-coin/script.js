@@ -15,7 +15,7 @@ function fun(data1){
         row.innerHTML +=` <div class="col-lg-3">
     <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
         <div class="card-header"> ${data1.coins[i].id.toUpperCase()}</div>
-         <img src="${data1.coins[i].icon}" class="card-img-top" alt="crypto">
+         <img src="${data1.coins[i].icon}" class="card-img-top" alt="d-currency">
         <div class="card-body">
          <p class="card-text">Name: ${data1.coins[i].name}</p>
          <p class="card-text1">Symbol: ${data1.coins[i].symbol}</p>
