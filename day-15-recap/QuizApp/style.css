@@ -1,7 +1,9 @@
-.quizContainer{
+#quizContainer{
     border:1px solid black;
     width:35%;
-    background-color: rgb(90, 113, 113) !important;
+    padding:25px 25px 30px 70px;
+    margin:0% 10% 10% 26%;
+    background-color: rgb(166, 166, 214);
     
 }
 
@@ -10,9 +12,8 @@ h2{
     width:88%;
     text-align: center;
     padding: 7px;
-    
     border:1px solid rgb(15, 206, 15);
-    border-radius: 5%;
+    
 }
 ul{
     padding: 0;
